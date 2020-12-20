@@ -26,6 +26,11 @@
     color: var(--white)!important;
 }
 body{
+    overflow-x: hidden;
+}
+#courses,
+#pricing {
+    scroll-margin-top: 80px;
 }
 /* End Global Styles */
 /* Start NavBar */
@@ -65,8 +70,15 @@ input.form-control {
     .hero .hero-text{
         margin-top: 5%;
     }
+    .hero{
+        margin-bottom: 10rem;   
+    }
 }
 @media screen and (max-width: 750px){
+    .hero{
+        position: relative;
+        margin-bottom: 8rem;   
+    }
     .hero .hero-text h1{
         font-size: 1.5rem;
     }
@@ -81,6 +93,9 @@ input.form-control {
     }
 }
 @media screen and (max-width: 520px){
+    .hero{
+        margin-bottom: 5rem;   
+    }
     .hero .hero-text h1{
         font-size: 1rem;
     }
@@ -106,6 +121,21 @@ input.form-control {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width:990px){
+    .instructors h2{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:775px){
+    .instructors h2{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:430px){
+    .instructors h2{
+        font-size: 1.5rem;
+    }
 }
 /* End Instructors Section */
 /* Start Latest Courses */
@@ -318,6 +348,14 @@ input.form-control {
     border-right: 1px solid var(--gray);
     border-bottom: 1px solid var(--gray);
 }
+@media screen and (max-width:765px){
+    .features .blue,
+    .features .green,
+    .features .yellow,
+    .features .violet{
+        margin-bottom: 1.2rem;
+    }
+}
 .features .blue {
     border-top: 1rem solid var(--blue);
     box-shadow: 0 .8rem 2px -2px var(--blue);
@@ -472,7 +510,11 @@ input.form-control {
 .pricing .btn-yellow{
     background-color: var(--yellow);
 }
-
+@media screen and (max-width:765px){
+    .pricing .break{
+        margin-bottom: 10rem;
+    }
+}
 /* End Pricing Section */
 /* Start Footer */
 .footer{
@@ -494,4 +536,30 @@ input.form-control {
     margin-bottom: .2rem;
 }
 
+
+
+.created {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.created p {
+    margin: 1.2rem 0;
+}
+
+.created i {
+    color: red;
+}
+
+.created a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+.created a:hover{
+	color: var(--blue);
+}
 /* End Footer */
